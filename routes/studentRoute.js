@@ -11,6 +11,6 @@ router.get('/create', passport.checkAuthentication, studentController.createStud
 router.get('/delete/:id', passport.checkAuthentication, studentController.deleteStudent);
 
 // ------------------- Posts Requests ----------
-router.post('/create-student', passport.checkAuthentication, studentController.createStudent);
+router.post('/createStudent', passport.checkAuthentication, studentController.createStudent);
 
 module.exports = router;
